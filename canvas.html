@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <title>Canvas - chiptadigital.com</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+<canvas style="color: red;" id="canvas"></canvas>
+<canvas style="color: red;" id="canvas2"></canvas>
+
+<script type="text/javascript">
+  function createCanvas() {
+      var canvas = document.getElementById('canvas'),
+      ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#f90';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = '#fff';
+      ctx.font = '28px sans-serif';
+      ctx.fillText('this generate image 1', 10, canvas.height / 2 - 15);
+      ctx.font = '14px sans-serif';
+      ctx.fillText('right click this image and then save image as', 15, canvas.height / 2 + 35);
+  }
+  function createCanvas2() {
+      var canvas = document.getElementById('canvas2'),
+      ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#f20';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = '#fff';
+      ctx.font = '28px sans-serif';
+      ctx.fillText('this generate image 2', 10, canvas.height / 2 - 15);
+      ctx.font = '14px sans-serif';
+      ctx.fillText('right click this image and then save image as', 15, canvas.height / 2 + 35);
+  }
+createCanvas();createCanvas2();
+
+</script>
+</body>
+</html>
